@@ -17,3 +17,7 @@ target/surefire-reports/TEST-bgh.codility.cyclicrotation.test.TestCyclicRotation
 target/test-classes/bgh/codility/oddoccurrencesinarray/test/TestOddAccurances.class
 target/test-classes/bgh/codility/cyclicrotation/test/TestCyclicRotation.class
 target/surefire-reports/bgh.codility.oddoccurrencesinarray.test.TestOddAccurances.txt
+*.class
+*.txt
+.idea/.name
+target/surefire-reports/TEST-bgh.codility.frogjmp.test.TestFrogJmp.xml
