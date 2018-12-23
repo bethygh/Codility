@@ -6,6 +6,9 @@ import java.util.stream.IntStream;
 public class PermMissingElem {
     public int findMissingElem (int[] input) {
 
+        if (input.length == 0)
+            return 0;
+
         int[] sorted = IntStream.of(input)
                 .boxed()
                 .sorted()

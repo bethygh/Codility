@@ -20,4 +20,13 @@ public class TestPermMissingElem {
         int ret = permMissingElem.findMissingElem(array);
         Assert.assertEquals(4, ret);
     }
+
+    @Test
+    public void testMissingElem3() {
+        PermMissingElem permMissingElem = new PermMissingElem();
+        int [] array = {};
+        int ret = permMissingElem.findMissingElem(array);
+        Assert.assertEquals(0, ret);
+    }
+
 }
