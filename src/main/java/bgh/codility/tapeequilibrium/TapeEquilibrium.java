@@ -14,7 +14,7 @@ public class TapeEquilibrium {
             a = Arrays.stream(Arrays.copyOfRange(input, 0, p)).sum();
             b = Arrays.stream(Arrays.copyOfRange(input, p, input.length)).sum();
 
-            diff = (int) ((b>a) ? b-a : a-b);
+            diff = (int) Math.abs(a-b);
             min = (min<diff) ? min : diff;
         }
 
