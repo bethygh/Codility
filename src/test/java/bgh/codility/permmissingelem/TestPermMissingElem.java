@@ -26,7 +26,30 @@ public class TestPermMissingElem {
         PermMissingElem permMissingElem = new PermMissingElem();
         int [] array = {};
         int ret = permMissingElem.findMissingElem(array);
-        Assert.assertEquals(0, ret);
+        Assert.assertEquals(1, ret);
     }
 
+    @Test
+    public void testMissingElem4() {
+        PermMissingElem permMissingElem = new PermMissingElem();
+        int [] array = {2,5,6,3,4};
+        int ret = permMissingElem.findMissingElem(array);
+        Assert.assertEquals(1, ret);
+    }
+
+    @Test
+    public void testMissingElem5() {
+        PermMissingElem permMissingElem = new PermMissingElem();
+        int [] array = {1,5,6,3,4};
+        int ret = permMissingElem.findMissingElem(array);
+        Assert.assertEquals(2, ret);
+    }
+
+    @Test
+    public void testMissingElem6() {
+        PermMissingElem permMissingElem = new PermMissingElem();
+        int [] array = {2,5,1,3,4};
+        int ret = permMissingElem.findMissingElem(array);
+        Assert.assertEquals(6, ret);
+    }
 }
