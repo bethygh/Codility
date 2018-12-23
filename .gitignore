@@ -21,3 +21,4 @@ target/surefire-reports/bgh.codility.oddoccurrencesinarray.test.TestOddAccurance
 *.txt
 .idea/.name
 target/surefire-reports/TEST-bgh.codility.frogjmp.test.TestFrogJmp.xml
+target/surefire-reports/TEST-bgh.codility.permmissingelem.TestPermMissingElem.xml
