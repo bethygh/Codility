@@ -1,6 +1,5 @@
 package bgh.codility.permmissingelem;
 
-import bgh.codility.oddoccurrencesinarray.OddAccurances;
 import org.junit.Assert;
 import org.junit.Test;
 
