@@ -11,8 +11,8 @@ public class TapeEquilibrium {
         int min = Integer.MAX_VALUE, diff;
         long a, b;
         for (int p=1 ; p<input.length ; p++) {
-            a = sumArray(Arrays.copyOfRange(input, 0, p));
-            b = sumArray(Arrays.copyOfRange(input, p, input.length));
+            a = Arrays.stream(Arrays.copyOfRange(input, 0, p)).sum();
+            b = Arrays.stream(Arrays.copyOfRange(input, p, input.length)).sum();
 
             diff = (int) ((b>a) ? b-a : a-b);
             min = (min<diff) ? min : diff;
@@ -20,16 +20,4 @@ public class TapeEquilibrium {
 
         return min;
     }
-
-    private long sumArray(int[] input) {
-        if (input.length == 0) return 0;
-
-        long sum = 0;
-        for (int i: input
-             ) {
-            sum += i;
-        }
-        return sum;
-    }
-
 }
