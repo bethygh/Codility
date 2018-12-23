@@ -9,18 +9,14 @@ public class PermMissingElem {
         if (input.length == 0)
             return 1;
 
-        int[] sorted = java.util.stream.IntStream.of(input)
-                .boxed()
-                .sorted()
-                .mapToInt(i -> i)
-                .toArray();
+        Arrays.sort(input);
 
-        for(int i=0 ; i<sorted.length ; i++)
+        for(int i=0 ; i<input.length ; i++)
         {
-            if (sorted[i] != i+1)
-                return sorted[i] - 1;
+            if (input[i] != i+1)
+                return input[i] - 1;
         }
 
-        return sorted.length+1;
+        return input.length+1;
     }
 }
